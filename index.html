@@ -10,10 +10,20 @@
 
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
+  @keyframes bgShift{
+    0%{background-position:0% 0%;}
+    50%{background-position:100% 100%;}
+    100%{background-position:0% 0%;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .page{animation:none;}
+  }
   .page{
     min-height:100vh;
     font-family:'Figtree',sans-serif;
-    background:linear-gradient(160deg,#0f2d55 0%,#1a4a8a 45%,#1e5fa8 100%);
+    background:linear-gradient(140deg,#0a2347 0%,#1a4a8a 22%,#2a7bd4 48%,#1456a0 72%,#0a2347 100%);
+    background-size:320% 320%;
+    animation:bgShift 24s ease-in-out infinite;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -145,7 +155,7 @@
     <p class="location"><i class="ti ti-map-pin" aria-hidden="true" style="font-size:12px;vertical-align:-1px;margin-right:3px"></i>Coulsdon, England</p>
 
     <p class="bio">
-      My thing is talking people's ears off about tech, and for 15+ years I've been doing it for a living. From government and clean energy to the organizations keeping the smart home private and powerful.
+      15+ years telling stories about tech - from government and clean energy to open-source tools, building a more private and powerful smart home.
       Currently Marketing Lead at <a href="https://nabucasa.com/" target="_blank" style="color: white;">Nabu Casa</a>, champions of open home tech.
     </p>
 
@@ -153,7 +163,7 @@
       <span class="tag">Marketing</span>
       <span class="tag">Press &amp; PR</span>
       <span class="tag">Open Source</span>
-      <span class="tag">Smart Energy</span>
+      <span class="tag">Clean tech</span>
       <span class="tag">Smart Homes</span>
     </div>
 
